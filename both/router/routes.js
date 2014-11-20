@@ -8,4 +8,5 @@ Router.configure({
 });
 
 
-Router.route('/', {name: 'home'});
+Router.route('/', {name: 'Home'});
+Router.route('/blog', {name: 'posts.index'});
