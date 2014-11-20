@@ -7,4 +7,7 @@ meteor-platform
 iron:router
 mizzao:bootstrap-3
 accounts-password
+insecure
+autopublish
+houston:admin
 
