@@ -4,19 +4,45 @@
             <div class="nav-wrapper">
                 <a href="{{pathFor 'Home'}}" class="brand-logo">Meteor Mining</a>
                 <ul id="nav-mobile" class="right side-nav">
-                    <li><a href="{{pathFor 'Home'}}">Home</a></li>
-                    <li><a href="{{pathFor 'posts.index'}}">Blog</a></li>
+                    <li><a href="{{pathFor 'Home'}}">Home</a>
+                    </li>
+                    <li><a href="{{pathFor 'posts.index'}}">Blog</a>
+                    </li>
+                    {{#if currentUser}}
+                    <ul class="nav navbar-nav navbar-right logged-in">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{displayName}} <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Settings</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a class="logout" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    {{else}}
+                    <li><a class="modal-trigger" href="#modalRegister">Register</a>
+                    </li>
+                    <li><a class="modal-trigger" href="#modalLogin">Login</a>
+                    </li>
+                    {{/if}}
                 </ul>
                 <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
             </div>
         </div>
     </nav>
-    {{> yield}}
-    
-    {{> Footer}}
-    
+    {{> yield}} 
+    {{> Footer}} 
+    {{> Login}} 
+    {{> Register}}
+
     <script>
         $(".button-collapse").sideNav();
+        $(document).ready(function() {
+            $('.modal-trigger').leanModal();
+        });
     </script>
+
 </template>
 
