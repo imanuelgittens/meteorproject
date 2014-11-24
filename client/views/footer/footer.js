@@ -1,7 +1,7 @@
 /*****************************************************************************/
-/* PostItem: Event Handlers and Helpersss .js*/
+/* Footer: Event Handlers and Helpersss .js*/
 /*****************************************************************************/
-Template.PostItem.events({
+Template.Footer.events({
   /*
    * Example:
    *  'click .selector': function (e, tmpl) {
@@ -10,7 +10,7 @@ Template.PostItem.events({
    */
 });
 
-Template.PostItem.helpers({
+Template.Footer.helpers({
   /*
    * Example:
    *  items: function () {
@@ -20,13 +20,13 @@ Template.PostItem.helpers({
 });
 
 /*****************************************************************************/
-/* PostItem: Lifecycle Hooks */
+/* Footer: Lifecycle Hooks */
 /*****************************************************************************/
-Template.PostItem.created = function () {
+Template.Footer.created = function () {
 };
 
-Template.PostItem.rendered = function () {
+Template.Footer.rendered = function () {
 };
 
-Template.PostItem.destroyed = function () {
+Template.Footer.destroyed = function () {
 };

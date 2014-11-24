@@ -1,9 +1,27 @@
 <template name="PostsIndex">
     <div class="posts">
-        <div class="container">
+        <div class="row container">
             {{#each posts}} 
                 {{> PostItem}} 
             {{/each}}
+        </div>
+    </div>
+</template>
+
+<template name="PostItem">
+    <div class="post">
+        <div class="col s12 m6">
+            <div class="card cyan">
+                <div class="card-content">
+                    <h1>{{title}}</h1>
+                    <p>{{body}}</p>
+                </div>
+                <div class="card-footer">
+                    
+                    <a href="{{pathFor 'post.detail' params=this}}" class="waves-effect waves-light btn">Read More</a>
+                  
+                </div>
+            </div>
         </div>
     </div>
 </template>

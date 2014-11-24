@@ -1,3 +1,7 @@
 /*****************************************************************************/
-/* MasterLayout: Style */
+/* PostDetail Publish Functions
 /*****************************************************************************/
+
+Meteor.publish('post_detail', function (id) {
+    return Posts.find({'_id': id});
+});
