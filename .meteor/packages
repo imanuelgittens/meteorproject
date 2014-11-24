@@ -7,6 +7,5 @@ meteor-platform
 iron:router
 accounts-password
 insecure
-d0minikk:materialize-meteor
 houston:admin
-
+mizzao:bootstrap-3

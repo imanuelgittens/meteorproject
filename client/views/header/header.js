@@ -1,8 +1,11 @@
 /*****************************************************************************/
-/* MasterLayout: Event Handlers and Helpersss .js*/
+/* Header: Event Handlers and Helpersss .js*/
 /*****************************************************************************/
-Template.MasterLayout.events({
-    
+Template.Header.events({
+    'click .logout': function(event, template){
+		event.preventDefault();
+		Meteor.logout();
+	}
   /*
    * Example:
    *  'click .selector': function (e, tmpl) {
@@ -11,7 +14,10 @@ Template.MasterLayout.events({
    */
 });
 
-Template.MasterLayout.helpers({
+Template.Header.helpers({
+    displayName: function(){
+		return Meteor.user().emails[0].address;
+	}
   /*
    * Example:
    *  items: function () {
@@ -21,13 +27,13 @@ Template.MasterLayout.helpers({
 });
 
 /*****************************************************************************/
-/* MasterLayout: Lifecycle Hooks */
+/* Header: Lifecycle Hooks */
 /*****************************************************************************/
-Template.MasterLayout.created = function () {
+Template.Header.created = function () {
 };
 
-Template.MasterLayout.rendered = function () {
+Template.Header.rendered = function () {
 };
 
-Template.MasterLayout.destroyed = function () {
+Template.Header.destroyed = function () {
 };
