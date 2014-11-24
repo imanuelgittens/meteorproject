@@ -1,7 +1,7 @@
 PostDetailController = RouteController.extend({
   waitOn: function () {
       var id = this.params._id;
-      Meteor.subscribe('post_detail', id);
+      return [Meteor.subscribe('post_detail', id), Meteor.subscribe('comments', id)];
   },
 
   data: function () {

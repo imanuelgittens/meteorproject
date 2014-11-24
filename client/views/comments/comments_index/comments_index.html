@@ -1,0 +1,13 @@
+<template name="CommentsIndex">
+    
+        <div class="comments-list">
+            <h2>Comments</h2>
+            <ul class="comments">
+                {{#each comments}} 
+                    {{> CommentItem}} 
+                {{/each}}
+            </ul>
+        </div>
+    
+    
+</template>

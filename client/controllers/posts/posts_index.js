@@ -1,6 +1,6 @@
 PostsIndexController = RouteController.extend({
   waitOn: function () {
-      Meteor.subscribe('posts_index');
+      return [Meteor.subscribe('posts_index'), Meteor.subscribe('comments')];
   },
 
   data: function () {
