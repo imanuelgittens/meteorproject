@@ -14,16 +14,26 @@
 <template name="PostItem">
     <div class="post">
         
-            <div class="post-title">
-                <div class="card-content">
+            
+                <div class="post-title">
                     <h1>{{title}}</h1>
                 </div>
+                <div class="post-attributes">
+                    <p>posted on {{submitted}} - by {{author}} - in categories [{{categories}}]</p>
+        </div>
+                <div class="featured-image">
+                    <img src="{{featured_image}}"/>
+                </div>
                 <div class="post-body">
-                    <p>{{body}}</p>
-                    <a href="{{pathFor 'post.detail' params=this}}" class="btn btn-success">Read More</a>
+                    <p>{{snippet}}</p>
+                    
+                    <div class="blog-btn">
+                        <a href="{{pathFor 'post.detail' params=this}}" class="blog-btn">Continue reading →</a>
+                    </div>
+                    
 
                 </div>
-            </div>
+            
         
     </div>
 </template>

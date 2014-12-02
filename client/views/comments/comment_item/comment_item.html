@@ -1,17 +1,18 @@
 <template name="CommentItem">
-    <div class="col s12">
-      <div class="card light-green">
-          <div class="card-content">
-              <h5>{{comment}}</h5>
-          </div>	
-          <div class="card-footer">
+    <div class="row">
+        <div class="container comment-item">
+            <div class="comment-content">
+                <h5>{{comment}}</h5>
+            </div>
+            <div class="comment-footer">
                 <div class="author">
                     <p>Posted By: {{firstName}} {{lastName}}</p>
-              </div>
-              <div class="timestamp">
-                <p>At: {{submitted}}</p>
-              </div>
-          </div>
-      </div>
-  </div>
+                </div>
+                <div class="timestamp">
+                    <p>At: {{submitted}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </template>
