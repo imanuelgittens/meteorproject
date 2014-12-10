@@ -1,5 +1,5 @@
 <template name="Header">
-    <div class="row above-header">
+    <!--<div class="above-header">
         {{#if currentUser}}
         <div class="container">
             <ul class="nav navbar-nav navbar-right logged-in">
@@ -25,7 +25,7 @@
 
         </div>
         {{/if}}
-    </div>
+    </div>-->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -43,12 +43,53 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-left">
                         <li><a href="{{pathFor 'Home'}}">Home</a>
                         </li>
                         <li><a href="{{pathFor 'posts.index'}}">Blog</a>
                         </li>
+                        <!--{{#if currentUser}}
+                        <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{displayName}} <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a class="logout" href="#">Logout</a>
+                        </li>
                     </ul>
+                </li>
+                        {{else}}
+                        <li><a class="register-button" href="{{pathFor 'Register'}}">Sign Up</a></li>
+                        <li><a class="login-button" href="{{pathFor 'Login'}}">Login</a></li>
+                        {{/if}}-->
+                    </ul>
+                    
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        {{#if currentUser}}
+                        <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{displayName}} <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a class="logout" href="#">Logout</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                        {{else}}
+                        <li><a class="register-button" href="{{pathFor 'Register'}}">Sign Up</a></li>
+                        <li><a class="login-button" href="{{pathFor 'Login'}}">Login</a></li>
+                        {{/if}}
+                    </ul>
+                    
+                    <!--<ul class="nav navbar-nav navbar-right">
+                        
+                    </ul>-->
+                    
+                    
                 </div>
             </div>
 

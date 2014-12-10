@@ -1,30 +1,28 @@
 <template name="PostsIndex">
     <div class="posts">
-        <div class="row">
             <div class="container">
                 {{#each posts}} 
                 {{> PostItem}} 
                 {{/each}}
             </div>
 
-        </div>
+        
     </div>
 </template>
 
 <template name="PostItem">
     <div class="post">
-        
-            
-                <div class="post-title">
+          
+                <div class="post-title col-xs-12">
                     <h1>{{title}}</h1>
                 </div>
-                <div class="post-attributes">
+                <div class="post-attributes col-xs-12">
                     <p>posted on {{submitted}} - by {{author}} - in categories [{{categories}}]</p>
         </div>
-                <div class="featured-image">
-                    <img src="{{featured_image}}"/>
+                <div class="featured-image col-xs-12">
+                    <img class="img-responsive" src="{{featured_image}}"/>
                 </div>
-                <div class="post-body">
+                <div class="post-body col-xs-12">
                     <p>{{snippet}}</p>
                     
                     <div class="blog-btn">

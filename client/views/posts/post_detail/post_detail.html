@@ -1,24 +1,23 @@
 <template name="PostDetail">
     <div class="container">
         <div class="post-detail">
-            <div class="col s12">
-                <div class="card cyan">
-                    <div class="card-content">
-                        <h1>{{title}}</h1>
 
-                    </div>
-
-                    <div class="card-footer">
-                        <p>{{body}}</p>
-                    </div>
-                </div>
+            <div class="title">
+                <h1>{{title}}</h1>
             </div>
+            <div class="post-attributes">
+                <p>posted on {{submitted}} - by {{author}} - in categories [{{categories}}]</p>
+            </div>
+            <div class="featured-image">
+                <img src="{{featured_image}}" />
+            </div>
+            <div class="body">
+                <p>{{body}}</p>
+            </div>
+
         </div>
-        {{> CommentsIndex}}
-        
-        
-        {{> CommentSubmit}}
-        
-        
+        {{> CommentsIndex}} {{> CommentSubmit}}
+
+
     </div>
 </template>
