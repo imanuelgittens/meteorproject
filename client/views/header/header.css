@@ -3,4 +3,24 @@
 /*****************************************************************************/
 .navbar{
     margin-bottom: 0px;
+    border: none;
+    border-radius: 0px; 
+    padding: 5px 0;
 }
+
+.top-nav{
+    background-color: #393c65;  
+}
+
+.menu .navbar-nav li a{
+    color: #ebe7e4;   
+}
+
+.menu .navbar-nav li a:hover, .menu .navbar-nav li a:focus{
+    color: #7ad8d8;   
+}
+
+.menu .navbar-nav li a.active{
+    color: #7ad8d8;   
+}
+

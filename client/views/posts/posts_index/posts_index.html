@@ -17,7 +17,7 @@
                     <h1>{{title}}</h1>
                 </div>
                 <div class="post-attributes col-xs-12">
-                    <p>posted on {{submitted}} - by {{author}} - in categories [{{categories}}]</p>
+                    <p>posted on {{submitted}} - by {{author}}</p>
         </div>
                 <div class="featured-image col-xs-12">
                     <img class="img-responsive" src="{{featured_image}}"/>
@@ -26,7 +26,7 @@
                     <p>{{snippet}}</p>
                     
                     <div class="blog-btn">
-                        <a href="{{pathFor 'post.detail' params=this}}" class="blog-btn">Continue reading →</a>
+                        <a href="{{pathFor 'post.detail' params=this}}" class="btn btn-lg btn-call">Continue reading →</a>
                     </div>
                     
 

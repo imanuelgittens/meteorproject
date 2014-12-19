@@ -1,3 +1,20 @@
 /*****************************************************************************/
 /* CommentSubmit: Style */
 /*****************************************************************************/
+.blog-donate h4{
+  text-align: center;  
+}
+
+.blog-donate form{
+    margin: 20px auto;
+    
+}
+
+.comment-submit form{
+    padding-bottom: 40px;
+    
+}
+
+.comment-submit h4{
+    text-align: center;   
+}

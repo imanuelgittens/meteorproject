@@ -1,43 +1,26 @@
 <template name="CommentSubmit">
-    <div class="comment-submit container">
-        <form role="form">
-            <div class="form-group">
-                <label for="exampleInputEmail1">First Name</label>
-                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Enter first name" required>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Last Name</label>
-                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Enter last name" required>
-            </div>
-            <div class="form-group">
-                <textarea class="form-control" name="comment" id="comment" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-        <!-- <form class="col s12">
-            <div class="row">
-                <div class="input-field col s6">
-                    <input name="first_name" id="first_name" type="text" required>
-                    <label for="first_name">First Name</label>
+    <div class="comment-submit">
+        
+            <div class="col-md-6">
+            <h4>Submit a Comment</h4>
+            <div class="alert alert-success comment-alert" role="alert">Comment Added</div>
+            <form role="form">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">First Name</label>
+                    <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Enter first name" required>
                 </div>
-                <div class="input-field col s6">
-                    <input name="last_name" id="last_name" type="text" required>
-                    <label for="last_name">Last Name</label>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Last Name</label>
+                    <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Enter last name" required>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input name="comment" id="comment" type="text" required>
-                    <label for="comment">Comment</label>
+                <div class="form-group">
+                    <label for="Comments">Comment</label>
+                    <textarea class="form-control" name="comment" id="comment" rows="3" required></textarea>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s6">
-                    <input type="submit" href="#" class="waves-effect waves-light btn-large" value="Add Comment" />
-                </div>
-            </div>
-        </form>
--->
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+        
 
     </div>
 </template>

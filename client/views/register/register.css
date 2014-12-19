@@ -1,3 +1,32 @@
 /*****************************************************************************/
 /* Register: Style */
 /*****************************************************************************/
+.register{
+     background-image: url(/images/register.png);
+}
+
+.register form{
+    border: 1px solid;
+    background-color: #7FCFD2;
+    max-width: 400px;
+    margin-top: 200px;
+    margin: 200px auto;
+    border-radius: 3px;
+}
+
+.register h3{
+    text-align: center;
+    font-weight: bold;
+}
+
+.register p{
+text-align: center;
+}
+
+.register form div{
+    padding: 0px 18px;       
+}
+
+.register form button{
+    margin: 0px 0px 20px 18px;    
+}

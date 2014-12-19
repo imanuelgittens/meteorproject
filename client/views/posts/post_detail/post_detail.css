@@ -1,8 +1,7 @@
 /*****************************************************************************/
 /* PostDetail: Style */
 /*****************************************************************************/
-.post-detail .title{
-    font-family: "Coustard", Georgia, serif!important;   
+.post-detail .title{ 
     font-weight: 400!important;
     font-size: 1.9em!important;
     text-align: center;   
@@ -15,4 +14,14 @@
 .post-detail .body{
     font-size: 18px;
     text-align: center;
+}
+
+.comment-login{
+    padding: 112px 50px;
+    border-radius: 3px;
+    margin: 20px 0px;
+}
+
+.comment-alert{
+    display: none;   
 }

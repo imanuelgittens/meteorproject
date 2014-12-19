@@ -1,30 +1,20 @@
 <template name="Footer">
-    <div class="footer-content">
-		<div class="container">
-			<h2>Meteor Mining</h2>
-			<div class="footer-message">
-				<p>I hope that this site is useful in increasing your skills 
-					using meteorjs and well as web development in general. 
-					If you have any questions or suggestions, feel free to 
-					<a href="#">CONTACT</a> me. Also checkout
-					my social provides as well to provide feedback</p>
-			</div>
-			<div class="social-profiles">
-				<ul>
-					<li><a href="#" class="facebook"><i class="fa fa-3x fa-facebook-square"></i></a></li>
-					<li><a href="#" class="linkedin"><i class="fa fa-3x fa-linkedin-square"></i></a></li>
-				</ul>
-			</div>	
-		</div>
-	</div>
-	<div class="after-footer">
-			<div class="container">
-				<div class="made-with pull-left">
-					<p>Made with Caribbean Breeze in Trinidad</p>
-				</div>
-				<div class="copyright pull-right">
-					<p>© 2014 MeteorMining. All Rights Reserved.</p>
-				</div>
-			</div>
-		</div>
+    
+    <div class="after-footer">
+        <div class="container">
+            <div class="copyright pull-left">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="{{pathFor 'learn'}}">Terms of Use</a>
+                        </li>
+                        <li><a href="{{pathFor 'contact'}}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="made-with pull-right">
+                <p class="love">Made with Caribbean Breeze in Trinidad</p>
+            </div>
+        </div>
+    </div>
 </template>

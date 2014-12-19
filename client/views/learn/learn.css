@@ -1,0 +1,16 @@
+/*****************************************************************************/
+/* Learn: Style */
+/*****************************************************************************/
+.learn-one h2{
+    font-size: 2em;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+    margin: 50px 0px 30px;
+    padding: 10px 0px;
+}
+
+.learn-one ul{
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+}

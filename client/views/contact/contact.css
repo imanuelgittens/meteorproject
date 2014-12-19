@@ -1,0 +1,35 @@
+/*****************************************************************************/
+/* Contact: Style */
+/*****************************************************************************/
+.contact h2{
+    text-align: center;  
+}
+
+.social{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.social li{
+    display: inline;
+}
+
+.social .fa-linkedin-square{
+    color: #0177B5;          
+}
+
+.social .fa-github-square{
+    color: #000000;     
+}
+
+.contact-text p{
+    margin-top: 20px;
+}
+
+.contact-text ul{
+    margin-top: 25px;                 
+}
+
+.contact form{
+    margin-bottom: 20px;    
+}

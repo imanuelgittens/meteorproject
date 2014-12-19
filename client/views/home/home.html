@@ -1,55 +1,90 @@
 <template name="Home">
-
     <section class="home-one">
         <div class="container">
-            <h1>Start Digging!</h1>
-            <h3>Learn the Meteorjs framework with me by hacking through my site</h3>
-            <div class="banner-image">
-                <img class="img-responsive" src="/images/editor.gif">
+            <h1>Made For Beginners</h1>
+            <h3>Learn the Meteorjs framework with me by digging through this site</h3>
+            <div class="row home-banner-links">
+                <div class="col-md-6">
+                    <div class="text-right">
+                        <a href="" class="btn btn-lg btn-call">Start Digging Now</a>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="text-left">
+                        <a href="" class="btn btn-lg btn-call">View the Blog</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="home-banner-image">
+                <img class="img-responsive" src="/images/home-brackets.png">
             </div>
         </div>
     </section>
-    
+
     <section class="home-two">
         <div class="container">
-            <h4>Learn the Meteorjs framework with me by hacking through my siteLearn the Meteorjs framework with me by hacking through my siteLearn the Meteorjs framework with me by hacking through my siteLearn the Meteorjs framework with me by hacking through my site</h4>
-            
+            <h4 class="intro">Hi There! Beginner developer here and i'd like to help you learn Meteorjs - an awesome and easy to use framework for building great websites. I built this site to help you with all the problems I had as a developer fresh out of school with little to no web experience.</h4>
+
+            <h2>Problems we Solve</h2>
+
             <div class="row home-item">
-                <div class="col-md-6">
-                    <img class="img-responsive" src="/images/computer.png">
+                <div class="col-md-6 ">
+                    <img class="img-responsive" src="/images/road.png">
                 </div>
                 <div class="col-md-6">
-                    <h4>Learn the Meteorjs framework with me by hacking through my siteLearn the Meteorjs framework with me by hacking through my siteLearn the Meteorjs framework with me by hacking through my</h4>
+                    <h3>Where to Start</h3>
+                    <h4>There are many frameworks available for building rich web applications however as a beginner you want one to ease you into the development while giving you the ability to create awesomeness without being too complex.</h4>
+                </div>
+            </div>
+            <div class="row home-item">
+                <div class="col-md-6 text-right h-item2">
+                    <h3>Expensive Learning Resources</h3>
+                    <h4>Where I'm from there are little to no physical classes for building websites from frameworks so I had to depened on the internet however i quickly found that a lot of online learning resources are expensive which is why i'm making this absolutely free!</h4>
+                </div>
+                <div class="col-md-6">
+
+                    <img class="img-responsive" src="/images/expensive-icon.png">
                 </div>
             </div>
             <div class="row home-item">
                 <div class="col-md-6">
-                    <h4>Learn the Meteorjs framework with me by hacking through my siteLearn the Meteorjs framework with me by hacking through my siteLearn the Meteorjs framework with me by hacking through my</h4>
+                    <img class="img-responsive" src="/images/no-community.png">
                 </div>
-                <div class="col-md-6">
-                    
-                    <img class="img-responsive" src="/images/computer.png">
-                </div>
-            </div>
-            <div class="row home-item">
-                <div class="col-md-6">
-                    <img class="img-responsive" src="/images/computer.png">
-                </div>
-                <div class="col-md-6">
-                    <h4>Learn the Meteorjs framework with me by hacking through my siteLearn the Meteorjs framework with me by hacking through my siteLearn the Meteorjs framework with me by hacking through my</h4>
+                <div class="col-md-6 h-item3">
+                    <h3>No Community</h3>
+                    <h4>Beginners have small problems and I believe if other beginners can help each other solve these small problems, they themselves become better and everyone benefits. </h4>
                 </div>
             </div>
         </div>
-        
+
     </section>
-    
+
     <section class="home-three">
         <div class="container">
+            <h2>Keep this site going</h2>
+            <h4>You can help me keep this site running by donating. Let's help beginners everywhere!</h4>
             <div class="col-md-6">
                 <img class="img-responsive" src="/images/donate.png">
             </div>
-            <div class="col-md-6">
-                <h4>Keep this site going DONATE</h4>
+            <div class="donate col-md-6">
+                
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_donations">
+                    <input type="hidden" name="business" value="gittensimanuel@gmail.com">
+                    <input type="hidden" name="lc" value="US">
+                    <input type="hidden" name="item_name" value="Mining Meteor">
+                    <input type="hidden" name="no_note" value="0">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+                    <!--<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">-->
+                    <input type="image" src="/images/mm-paypal-btn.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+
+
             </div>
         </div>
     </section>

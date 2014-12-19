@@ -3,5 +3,13 @@
 /*****************************************************************************/
 .comment-item{
     margin: 10px 0 10px;
-    border: 1px solid #333;
+    border: 1px solid #393C65;
+    background-color: #EBEBEF;
+    border-radius: 3px;
+}
+
+.comment-footer p{
+    /*border-top: 1px dashed #393C65;*/
+    color: #999999;
+    margin-top: 10px;
 }

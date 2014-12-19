@@ -15,3 +15,5 @@ Router.route('/blog/:_id', {name: 'post.detail'});
 Router.route('/login', {name: 'Login'});
 Router.route('/register', {name: 'Register'});
 Router.route('/addPost', {name: 'add.post'});
+Router.route('/learn', {name: 'learn'});
+Router.route('/contact', {name: 'contact'});
