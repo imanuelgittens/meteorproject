@@ -12,7 +12,8 @@ Template.CommentsIndex.events({
 
 Template.CommentsIndex.helpers({
   comments: function(){
-        return Comments.find(); 
+        return Comments.find();
+      /*Meteor.call('showComments')*/
     }
 });
 

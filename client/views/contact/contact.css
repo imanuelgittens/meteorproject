@@ -33,3 +33,8 @@
 .contact form{
     margin-bottom: 20px;    
 }
+
+.contact{
+    min-height: 800px;  
+    
+}

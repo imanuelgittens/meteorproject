@@ -6,7 +6,6 @@
 meteor-platform
 iron:router
 accounts-password
-insecure
 houston:admin
 mizzao:bootstrap-3
 linto:fontawesome
@@ -14,4 +13,3 @@ kidovate:parallax
 cfs:standard-packages
 cfs:filesystem
 sacha:spin
-
