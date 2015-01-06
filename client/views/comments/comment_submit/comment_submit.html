@@ -17,6 +17,11 @@
                     <label for="Comments">Comment</label>
                     <textarea class="form-control" name="comment" id="comment" rows="3" required></textarea>
                 </div>
+                <div class="form-group">
+                    {{> reCAPTCHA}}
+                </div>
+                
+                
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
         </div>

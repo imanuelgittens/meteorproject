@@ -6,10 +6,11 @@
 meteor-platform
 iron:router
 accounts-password
-houston:admin
 mizzao:bootstrap-3
 linto:fontawesome
 kidovate:parallax
 cfs:standard-packages
 cfs:filesystem
 sacha:spin
+altapp:recaptcha
+houston:admin

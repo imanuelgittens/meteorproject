@@ -13,14 +13,25 @@ Template.CommentSubmit.events({
             postId: template.data._id
         };
 
-        Meteor.call('insertComment', comment);
-        form.reset();
-        $(function() {
-            $(".comment-alert").show();
-            setTimeout(function() {
-                
-                $(".comment-alert").hide();
-            }, 2000);
+        var captchaData = {
+            captcha_challenge_id: Recaptcha.get_challenge(),
+            captcha_solution: Recaptcha.get_response()
+        };
+
+        Meteor.call('verifyCaptcha', captchaData, function(error, result) {
+            if (error) {
+                alert('There was an error: ' + error.reason);
+            } else {
+                Meteor.call('insertComment', comment);
+                $(function() {
+                    $(".comment-alert").show();
+                    setTimeout(function() {
+
+                        $(".comment-alert").hide();
+                    }, 2000);
+                });
+                form.reset();
+            }
         });
 
     }

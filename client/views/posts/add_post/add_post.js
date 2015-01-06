@@ -8,7 +8,35 @@ Template.AddPost.events({
      *
      *  }
      */
-    'change #fImage': function(event, template) {
+    
+    
+    
+    'submit form': function(event, template){
+        event.preventDefault();
+        var title = template.find('[id=postTitle]').value;
+        var snippet = template.find('[id=postSnippet]').value;
+        var body = template.find('[id=postBody]').value;
+        var image = template.find('[id=fImage]').value;
+        
+        Meteor.call('verifyImage', image, function(error, result){
+            if (error) {
+                alert('There was an error please ensure you have uploaded an image file.');
+            } else {
+                Meteor.call('uploadImage', image, function(error, result){
+                    if(error){
+                        alert('There was an error: '+error.reason);   
+                    }
+                    else{
+                        alert('Image Uploaded!');   
+                    }
+                });
+            }
+        })
+        
+        /*alert(title + body + snippet);*/
+    }
+    
+    /*'change #fImage': function(event, template) {
 
         var image = template.find('[id=fImage]').value;
         var lastIndex = image.lastIndexOf("\\");
@@ -26,7 +54,7 @@ Template.AddPost.events({
                 console.log("File Uploaded")
             });
         }
-    }
+    }*/
 
     /*,
 
